@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+    <head>
+        <title>Newsfix</title>
+
+        <meta charset="utf-8">
+    	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    	<meta name="description" content="Newsfix - A single page app compiling news articles by pulling real time data from from The Guardian, The New York Times, and Buzzfeed APIs.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+        <link href="dist/main.css" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    </head>
+    <body>
+		<header class="header" ng-controller="NavListController as navList">
+			<a href="">
+				<h1>Newsfix</h1>
+			</a>
+			<nav>
+				<ul class="nav-list">
+					<li ng-repeat="item in navList.items" class="nav-list__item">{{item}}</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+		</main>
+		<div class="modal"></div>
+		<footer class="footer">
+		</footer>
+        <script src="app.js"></script>
+    </body>
+</html>
